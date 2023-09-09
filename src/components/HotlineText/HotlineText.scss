@@ -1,0 +1,54 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 690px;
+}
+  
+span {
+
+  z-index: 0;
+font-size: 1.5em;
+text-transform: uppercase;
+color: transparent;
+filter: blur(.3px);
+animation: 3s ease-in-out infinite alternate pulse;
+}
+  
+.video {
+margin-top: 50px;
+}
+  
+@keyframes pulse {
+  $color-a-1: #f8f8f2;
+  $color-a-2: #8be9fd;
+  $color-b-1: #ff79c6;
+  $color-b-2: #bd93f9;
+  $pos-1: -.01em -.01em;
+  $pos-2: -.10em -.10em;
+  
+  0% {
+    text-shadow:
+      rgba($color-a-1, .9) $pos-1,
+      rgba($color-b-1, .9) 0 0
+  }
+  
+  33% {
+    text-shadow:
+      rgba(mix($color-a-1, $color-a-2, 33%), .9) $pos-2,
+      rgba(mix($color-b-1, $color-b-2, 33%), .9) 0 0
+  }
+  
+  66% {
+    text-shadow:
+      rgba(mix($color-a-1, $color-a-2, 66%), .9) $pos-1,
+      rgba(mix($color-b-1, $color-b-2, 33%), .9) 0 0
+  }
+  
+  100% {
+    text-shadow:
+      rgba($color-a-2, .9) $pos-2,
+      rgba($color-b-2, .9) 0 0
+  }
+}

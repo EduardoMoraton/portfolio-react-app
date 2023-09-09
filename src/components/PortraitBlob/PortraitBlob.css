@@ -1,0 +1,10 @@
+.circle {
+  width: 200px; /* Adjust the width and height to make it the desired size */
+  height: 200px;
+  background-color: #bd93f9; /* Circle color */
+  border-radius: 50%; /* Makes it a circle */
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  overflow: hidden;
+}

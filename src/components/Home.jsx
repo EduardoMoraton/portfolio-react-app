@@ -11,19 +11,33 @@ function Home() {
   const svgBg = {
     backgroundImage: `url(${SvgBackGround})`,
     backgroundSize: "cover",
+    backgroundPosition: "bottom",
+  };
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <div
       name="home"
       className={
-        "w-full h-screen flex items-center justify-center flex-col-reverse md:flex-row"
+        "w-full h-screen flex justify-evenly flex-col-reverse lg:flex-row overflow-hidden"
       }
       style={svgBg}
     >
-      <div className={"mx-auto px-2 flex flex-col justify-center items-center"}>
+      <div
+        className={
+          "mx-auto py-auto px-2 flex flex-col justify-center items-center"
+        }
+      >
         <Reveal delay={0}>
-          <h1 className={"text-pink text-6xl"}>Eduardo Moratón</h1>
+          <h1 className={"text-pink md:text-6xl text-4xl sm:text-5xl"}>
+            Eduardo Moratón
+          </h1>
         </Reveal>
 
         <HotlineText className={"z-0"} />
@@ -43,17 +57,25 @@ function Home() {
             </Reveal>
           ))}
         </div>
-        <Reveal delay={1}>
+        <Reveal delay={0.8}>
           <div className={"flex py-2"}>
-            <button className={"text-foreground group flex items-center border-2 px-6 py-1 hover:bg-pink hover:border-pink trasition .3"}>
+            <button
+              onClick={scrollToAbout}
+              className={
+                "text-foreground group flex items-center border-2 px-6 py-1 hover:bg-pink hover:border-pink trasition .3"
+              }
+            >
               See more{" "}
-              <Icon className={"text-2xl group-hover:rotate-90 transition .3"} icon={"ph:arrow-right"}></Icon>
+              <Icon
+                className={"text-2xl group-hover:rotate-90 transition .3"}
+                icon={"ph:arrow-right"}
+              ></Icon>
             </button>
           </div>
         </Reveal>
       </div>
-      <div className={"mx-auto flex justify-center items-center"}>
-        <Reveal delay={1}>
+      <div className={"mx-auto py-auto flex justify-center items-center"}>
+        <Reveal delay={0.9}>
           <PortraitBlob image={Edu}></PortraitBlob>
         </Reveal>
       </div>

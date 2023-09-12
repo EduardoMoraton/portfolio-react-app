@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        currentLineBackDrop: "rgba(68, 71, 90, 0.8)",
         bg: "#282a36",
         currentLine: "#44475a",
         foreground: "#f8f8f2",

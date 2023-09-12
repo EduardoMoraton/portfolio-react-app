@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full h-[80px] flex justify-between items-center px-4 bg-currentLine text-foreground z-50`}
+      className={`fixed w-full h-[80px] flex justify-between items-center px-4 bg-currentLineBackDrop text-foreground  z-50 backdrop-blur-xl`}
     >
       <div>
         <Reveal y={10}>

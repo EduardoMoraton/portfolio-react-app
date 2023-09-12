@@ -4,9 +4,9 @@ import Goo from "gooey-react";
 import { motion } from "framer-motion";
 
 function getRandomAnimationParams() {
-  const forwardX = -200
-  const forwardY = -200
-  const backwardX = 25;
+  const forwardX = (Math.random() * 200) - 150
+  const forwardY = (Math.random() * 200) - 150
+  const backwardX = -25;
   const backwardY = 50;
 
   return {
@@ -20,7 +20,7 @@ function getRandomAnimationParams() {
 }
 
 function PortraitBlob({ image }) {
-  const numberOfCircles = 5; // Change this to the number of circles you want
+  const numberOfCircles = 20; // Change this to the number of circles you want
 
   const circleElements = [];
   for (let i = 0; i < numberOfCircles; i++) {
@@ -49,11 +49,11 @@ function PortraitBlob({ image }) {
   }
 
   return (
-    <div className="flex items-center justify-center">
+    <div className={"flex items-center justify-center w-[200px]"}>
       <div className="absolute">
         <Goo intensity="strong">{circleElements}</Goo>
       </div>
-      <img className="relative w-[300px]" src={image} alt="profile" draggable="false" />
+      <img className="relative md:w-[500px]" src={image} alt="profile" draggable="false" />
     </div>
   );
 }

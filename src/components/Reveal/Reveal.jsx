@@ -22,7 +22,7 @@ function Reveal({ children, delay, y = 75 }) {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ delay: delay }}
+        transition={{ delay: delay}}
       >
         {children}
       </motion.div>

@@ -6,6 +6,8 @@ import Chip from "./Chip/Chip";
 import TabView from "./TabView/TabView";
 import WorkExperience from "./Tabs/WorkExperience";
 import Projects from "./Tabs/Projects";
+import Certifications from "./Tabs/Certifications";
+import CodeArtDemos from "./Tabs/CodeArtDemos";
 
 function Experience() {
   const svgBg = {
@@ -14,7 +16,7 @@ function Experience() {
     backgroundPosition: "top",
   };
   
-  const tabs = [<WorkExperience/>,<Projects/>]
+  const tabs = [{name: 'Work', tab:<WorkExperience/>},{name: 'Projects', tab:<Projects/>}, {name: 'Certifications', tab:<Certifications/>}, {name: 'Code art demo', tab:<CodeArtDemos/>}]
 
   return (
     <div

@@ -31,3 +31,72 @@
       }
     }
   }
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  
+  
+  /* Atropos web component */
+  .atropos-banner {
+    width: 100%;
+    aspect-ratio: 631/383;
+  }
+  .atropos-rotate, .atropos-scale {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition-property: transform;
+    display: block;
+}
+
+.atropos-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    display: block;
+}
+
+.atropos-header img.atropos-header-spacer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.atropos-header img {
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    width: 120%;
+    height: 120%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: block;
+    z-index: 1;
+    transform-style: preserve-3d;
+    pointer-events: none;
+    max-width: none;
+}
+
+.atropos-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    transform-style: preserve-3d;
+    max-width: none;
+}
+
+.atropos-banner .atropos-highlight {
+    z-index: 100;
+  }
+  

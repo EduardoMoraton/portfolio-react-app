@@ -1,11 +1,12 @@
 import React from "react";
-import HotlineText from "./HotlineText/HotlineText";
 import SvgBackGround from "../assets/bg.svg";
-import Edu from "../assets/edu.png";
-import PortraitBlob from "./PortraitBlob/PortraitBlob";
-import Reveal from "./Reveal/Reveal";
-import { social_media } from "../data";
+import Atropos from "atropos/react";
+import "atropos/atropos.css";
 import { Icon } from "@iconify/react";
+import Konami from "react-konami-code";
+import smurfcatImage from '../assets/easter-egg/smurfcat.jpeg'
+import smurfcatSound from '../assets/easter-egg/smurfcat.mp3'
+
 
 function Home() {
   const svgBg = {
@@ -21,44 +22,57 @@ function Home() {
     }
   };
 
+  const images = require.context("../assets/parallax", true);
+
   return (
     <div
       name="home"
-      className={
-        "w-full h-screen flex justify-evenly flex-col-reverse lg:flex-row overflow-hidden"
-      }
+      className={"w-full h-screen flex items-center justify-center"}
       style={svgBg}
     >
-      <div
-        className={
-          "mx-auto py-auto px-2 flex flex-col justify-center items-center"
-        }
-      >
-        <Reveal delay={0}>
-          <h1 className={"text-pink md:text-6xl text-4xl sm:text-5xl"}>
-            Eduardo Moratón
-          </h1>
-        </Reveal>
-
-        <HotlineText className={"z-0"} />
-        <div className={"mx-auto px-2 flex"}>
-          {social_media.map((social, index) => (
-            <Reveal delay={(index + 5) / 10}>
-              <Icon
-                className={
-                  "text-foreground text-6xl hover:text-pink transition .3"
-                }
-                key={index}
-                icon={social.icon}
-                onClick={() => {
-                  window.location.href = social.link;
-                }}
-              ></Icon>
-            </Reveal>
-          ))}
-        </div>
-        <Reveal delay={0.8}>
-          <div className={"flex py-2"}>
+    <Konami action={()=>new Audio(smurfcatSound).play()}>
+      {<img src={smurfcatImage}></img>}
+    </Konami>
+      <div className={""}>
+        <Atropos
+          className={"atropos-header"}
+          activeOffset={20}
+          shadowScale={1.02}
+          shadow={true}
+          innerClassName={'rounded-xl'}
+          highlight={true}
+        >
+          <img
+            src={images(`./${"bg"}.png`)}
+            data-atropos-offset="-1"
+            className={'atropos-header-spacer'}
+          ></img>
+          <img
+            src={images(`./${"bg"}.png`)}
+            data-atropos-offset="-5"
+          ></img>
+          <img
+            src={images(`./${"4"}.png`)}
+            data-atropos-offset="-8"
+          ></img>
+          <img
+            src={images(`./${"3"}.png`)}
+            data-atropos-offset="-6"
+          ></img>
+          <img
+            src={images(`./${"2"}.png`)}
+            data-atropos-offset="-4"
+          ></img>
+          <img
+            src={images(`./${"1"}.png`)}
+            data-atropos-offset="-2"
+          ></img>
+          <img
+            src={images(`./${"0"}.png`)}
+            data-atropos-offset="8"
+          ></img>
+          <div className={"atropos-div flex alighn"}
+          data-atropos-offset="5">
             <button
               onClick={scrollToAbout}
               className={
@@ -72,12 +86,7 @@ function Home() {
               ></Icon>
             </button>
           </div>
-        </Reveal>
-      </div>
-      <div className={"mx-auto py-auto flex justify-center items-center"}>
-        <Reveal delay={0.9}>
-          <PortraitBlob image={Edu}></PortraitBlob>
-        </Reveal>
+        </Atropos>
       </div>
     </div>
   );

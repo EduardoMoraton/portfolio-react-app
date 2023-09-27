@@ -34,7 +34,7 @@ export const skillData = [
   {
     id: 4,
     skill: <Icon icon="simple-icons:pandas" className="display-4" />,
-    name: "Data Science libraries (Pandas, Numpy, Matplotlib)",
+    name: "Data Science",
   },
   {
     id: 5,
@@ -47,49 +47,69 @@ export const skillData = [
     name: "SQL",
   },
   {
-    id: 6,
+    id: 7,
     skill: <Icon icon="mdi:docker" className="display-4" />,
     name: "Docker",
   },
   {
-    id: 5,
+    id: 8,
     skill: <Icon icon="mdi:language-html5" className="display-4" />,
     name: "HTML5",
   },
   {
-    id: 6,
+    id: 9,
     skill: <Icon icon="ion:logo-css3" className="display-4" />,
     name: "CSS3",
   },
   {
-    id: 7,
+    id: 10,
     skill: <Icon icon="fa6-brands:js" className="display-4" />,
     name: "JavaScript",
   },
   {
-    id: 8,
+    id: 11,
     skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
     name: "BootStrap",
   },
   {
-    id: 8,
+    id: 12,
     skill: <Icon icon="mdi:react" className="display-4" />,
     name: "React",
   },
   {
-    id: 9,
+    id: 13,
     skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
     name: "Styled Components",
   },
   {
-    id: 11,
+    id: 14,
     skill: <Icon icon="bi:git" className="display-4" />,
     name: "Git",
   },
   {
-    id: 12,
+    id: 15,
     skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
     name: "GitHub",
+  },
+  {
+    id: 16,
+    skill: <Icon icon="simple-icons:selenium" className="display-4" />,
+    name: "Selenium",
+  },
+  {
+    id: 17,
+    skill: <Icon icon="iconoir:agile" className="display-4" />,
+    name: "Agile",
+  },
+  {
+    id: 18,
+    skill: <Icon icon="dashicons:rest-api" className="display-4" />,
+    name: "API REST",
+  },
+  {
+    id: 19,
+    skill: <Icon icon="mdi:language-kotlin" className="display-4" />,
+    name: "Kotlin",
   },
 ];
 
@@ -113,6 +133,10 @@ export const social_media = [
     icon: "mdi:github",
     link: "https://github.com/EduardoMoraton"
   },
+  {
+    icon: "mdi:gmail",
+    link: "mailto:eduardo.moraton@gmail.com"
+  },
 
 ]
 
@@ -131,14 +155,34 @@ export const work_experience = [
 
 export const projects = [
   {
+    id: 4,
+    name:'FilmSpot',
+    desc:'A basic web application that utilizes The Movie Database (TMDb) API.',
+    img:'',
+    demo:"https://film-spot.vercel.app/",
+    status:'Early work in process',
+    github:'https://github.com/EduardoMoraton/FilmSpot',
+    skills: [3,16]
+  },
+  {
+    id: 3,
+    name:'Autotube',
+    desc:'An app for automated creation of vertical short videos using web scraping, AI, and video editing. It generates, edits, narrates, and uploads videos to various platforms with modular functionality.',
+    img:'',
+    demo:null,
+    status:'Early work in process',
+    github:'https://github.com/EduardoMoraton/AutoTube',
+    skills: [3,16]
+  },
+  {
     id: 1,
     name:'Web scrapping + integration with telegram',
-    desc:'App for scrapping products of popular webpages of clothes such as Zara, Massimodutti and so on, then the products are saved in a spreadsheet and published in a telegram channel',
+    desc:'An application for scraping clothing products from popular websites like Zara and Massimo Dutti, saving the data in a spreadsheet, and sharing it on a Telegram channel.',
     img:'./assets/projects/1.png',
-    demo:'',
+    demo:null,
     status:'completed + outated',
-    github:'',
-    skills: [1,2,3]
+    github:null,
+    skills: [3,16]
   },
   {
     id: 2,
@@ -147,20 +191,60 @@ export const projects = [
     img:'',
     demo:null,
     status:'completed',
-    github:'aa',
-    skills: [1,2,5]
-  } ,
-  {
-    id: 3,
-    name:'Autotube',
-    desc:'App for automate the process of creating any kind of videos, oriented on vertical short video format, making use of web scrapping, AI, automation video creation, the app will create, edit, locute and upload the video to diferent platforms making use of modules',
-    img:'',
-    demo:null,
-    status:'Early work in process',
-    github:'https://github.com/EduardoMoraton/AutoTube',
-    skills: [1,2,3]
-  }
+    github:null,
+    skills: [3,16]
+  } 
 
+
+]
+
+
+export const certs = [
+  {
+    id:0,
+    name:"EF SET Certificate C2 Proficient",
+    from:"EF International Language Centers",
+    icon:"https://media.licdn.com/dms/image/C4E0BAQFPYnYteSvU6g/company-logo_100_100/0/1571994397349?e=1703721600&v=beta&t=emcPU7NB9t2OyIjvYVJpDH4_kYOThhjmKT1_nnNNoxs",
+    cert_code:"417J28",
+    expedition: "Sep 2023",
+    cert_link:"https://www.efset.org/cert/417J28"
+  },
+  {
+    id:1,
+    name:"Carrera Python para Data Science",
+    from:"OpenWebinars",
+    icon:"https://media.licdn.com/dms/image/D4D0BAQFI49yiiSnKeQ/company-logo_100_100/0/1688551095556?e=1703721600&v=beta&t=XOWAEeKMnNF0UnvqrQHFklmuxPrnLPgrm7HRr8O6jbI",
+    cert_code:"pR7O",
+    expedition: "Mar 2023",
+    cert_link:"https://openwebinars.net/cert/pR7O"
+  },
+  {
+    id:2,
+    name:"Curso de Machine Learning no supervisado en Python",
+    from:"OpenWebinars",
+    icon:"https://media.licdn.com/dms/image/D4D0BAQFI49yiiSnKeQ/company-logo_100_100/0/1688551095556?e=1703721600&v=beta&t=XOWAEeKMnNF0UnvqrQHFklmuxPrnLPgrm7HRr8O6jbI",
+    cert_code:"mlNp",
+    expedition: "Mar 2023",
+    cert_link:"https://openwebinars.net/cert/mlNp"
+  },
+  {
+    id:3,
+    name:"Curso de Scrum avanzado",
+    from:"OpenWebinars",
+    icon:"https://media.licdn.com/dms/image/D4D0BAQFI49yiiSnKeQ/company-logo_100_100/0/1688551095556?e=1703721600&v=beta&t=XOWAEeKMnNF0UnvqrQHFklmuxPrnLPgrm7HRr8O6jbI",
+    cert_code:"smAK",
+    expedition: "Jan 2023",
+    cert_link:"https://openwebinars.net/cert/smAK"
+  },
+  {
+    id:3,
+    name:"Curso de Scrum avanzado",
+    from:"OpenWebinars",
+    icon:"https://media.licdn.com/dms/image/D4D0BAQFI49yiiSnKeQ/company-logo_100_100/0/1688551095556?e=1703721600&v=beta&t=XOWAEeKMnNF0UnvqrQHFklmuxPrnLPgrm7HRr8O6jbI",
+    cert_code:"smAK",
+    expedition: "Jan 2023",
+    cert_link:"https://openwebinars.net/cert/smAK"
+  },
 ]
 
 // Dracula colors

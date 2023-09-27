@@ -60,12 +60,26 @@ function Home() {
             }
           >
             <div>
-              <h1 className={"text-pink text-7xl"} data-atropos-offset="5">
-                Eduardo Moratón
-              </h1>
+              <Reveal>
+                <div className={'flex justify-center'}>
+                  <h1 className={"text-green text-7xl absolute"} data-atropos-offset="5">
+                    Eduardo Moratón
+                  </h1>
+                  <h1 className={"text-cyan text-7xl absolute"} data-atropos-offset="5.4">
+                    Eduardo Moratón
+                  </h1>
+                  <h1 className={"text-purple text-7xl absolute"} data-atropos-offset="5.8">
+                    Eduardo Moratón
+                  </h1>
+                  <h1 className={"text-pink text-7xl relative"} data-atropos-offset="6.2">
+                    Eduardo Moratón
+                  </h1>
+                </div>
+              </Reveal>
+
               <div className={"mx-auto px-2 flex justify-center"} data-atropos-offset="4">
                 {social_media.map((social, index) => (
-                  <Reveal delay={(index + 5) / 10}>
+                  <Reveal delay={(index + 5) / 25}>
                     <Icon
                       className={
                         "text-foreground text-6xl hover:text-pink transition .3"
@@ -80,7 +94,8 @@ function Home() {
                 ))}
               </div>
               <div className={"flex py-2 justify-center"} data-atropos-offset="6">
-            <button
+                <Reveal delay={0.5}>
+                <button
               onClick={scrollToAbout}
               className={
                 "text-foreground group flex items-center border-2 px-6 py-1 hover:bg-pink hover:border-pink trasition .3"
@@ -92,6 +107,8 @@ function Home() {
                 icon={"ph:arrow-right"}
               ></Icon>
             </button>
+                </Reveal>
+            
           </div>
             </div>
           </div>

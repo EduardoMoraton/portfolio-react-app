@@ -47,7 +47,7 @@ function About() {
             </Reveal>
             <div className={"flex flex-wrap px-auto"}>
               {skillData.map((skill, index) => (
-                <Reveal delay={index / 25}>
+                <Reveal delay={index / 45}>
                   <Chip key={index} skill={skill}></Chip>
                 </Reveal>
               ))}

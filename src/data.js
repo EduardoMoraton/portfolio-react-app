@@ -141,23 +141,23 @@ export const projects = [
     skills: [1,2,3]
   },
   {
-    id: 1,
+    id: 2,
     name:'Web scrapping + reverse enginering of public api + integration with telegram',
-    desc:'App for scrapping products of popular webpages of clothes such as Zara, Massimodutti and so on, then the products are saved in a spreadsheet and published in a telegram channel',
+    desc:'Second version of the scrapping app this time integrating a kind of reverse enginering of public APIs to get the data and post into a telegram group',
     img:'',
     demo:null,
-    status:'completed + outated',
+    status:'completed',
     github:'aa',
     skills: [1,2,5]
   } ,
   {
-    id: 1,
-    name:'Web scrapping + reverse enginering of public api + integration with telegram',
-    desc:'App for scrapping products of popular webpages of clothes such as Zara, Massimodutti and so on, then the products are saved in a spreadsheet and published in a telegram channel',
+    id: 3,
+    name:'Autotube',
+    desc:'App for automate the process of creating any kind of videos, oriented on vertical short video format, making use of web scrapping, AI, automation video creation, the app will create, edit, locute and upload the video to diferent platforms making use of modules',
     img:'',
-    demo:'',
-    status:'completed + outated',
-    github:'',
+    demo:null,
+    status:'Early work in process',
+    github:'https://github.com/EduardoMoraton/AutoTube',
     skills: [1,2,3]
   }
 

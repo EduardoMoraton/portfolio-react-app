@@ -13,7 +13,7 @@ export class FullBlog extends Component {
   render() {
     const postname = this.state.currentUrl.split("/")[4]
     return (
-      <div>
+      <div className={'flex '}>
         {postname==null?<>A</>:<Post postpath={postname}></Post>}
       </div>
     );

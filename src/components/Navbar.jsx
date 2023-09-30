@@ -1,7 +1,7 @@
+// Navbar.js
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import Logo from "../assets/logo-pink.png";
-
 import { colors } from "../data.js";
 import Reveal from "./Reveal/Reveal";
 
@@ -17,25 +17,24 @@ const Navbar = () => {
         <Reveal y={10}>
           <img src={Logo} alt="Image logo" style={{ width: "60px" }} />
         </Reveal>
-        
       </div>
 
       {/* Menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex gap-2">
         <Reveal y={10} delay={0.1}>
-          <li>Home</li>
+        <a href="#home" smooth={true} duration={500}>Home</a>
         </Reveal>
         <Reveal y={10} delay={0.15}>
-          <li>About</li>
+        <a href="#about" smooth={true} duration={500}>About</a>
         </Reveal>
         <Reveal y={10} delay={0.2}>
-          <li>Experience</li>
+        <a href="#experience" smooth={true} duration={500}>Experience</a>
         </Reveal>
         <Reveal y={10} delay={0.25}>
-          <li>Work</li>
+        <a href="#blog" smooth={true} duration={500}>Blog</a>
         </Reveal>
         <Reveal y={10} delay={0.30}>
-          <li>Contact</li>
+        <a href="#contact" smooth={true} duration={500}>Contact</a>
         </Reveal>
       </ul>
 
@@ -62,15 +61,24 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-currentLine flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">Home</li>
-        <l className="py-6 text-4xl">About</l>
-        <li className="py-6 text-4xl">Experience</li>
-        <li className="py-6 text-4xl">Work</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl">
+          <a to="home" smooth={true} duration={500}>Home</a>
+        </li>
+        <li className="py-6 text-4xl">
+        <a to="home" smooth={true} duration={500}/>
+        </li>
+        <li className="py-6 text-4xl">
+        <a to="home" smooth={true} duration={500}/>
+        </li>
+        <li className="py-6 text-4xl">
+        <a to="home" smooth={true} duration={500}/>
+        </li>
+        <li className="py-6 text-4xl">
+        <a to="home" smooth={true} duration={500}/>
+        </li>
       </ul>
 
       {/* Social icons */}
-
       <div className="hidden"></div>
     </div>
   );

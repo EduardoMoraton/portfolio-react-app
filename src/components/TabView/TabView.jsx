@@ -12,7 +12,7 @@ function TabView({ tabs }) {
 
   return (
     <>
-      <ul className={'flex relative items-center'}>
+      <ul className={'flex relative items-center bg-currentLine p-2 rounded-full'}>
         {tabs.map((tab, index) => (
           <li
           className={'z-10 flex justify-center'}
@@ -26,7 +26,7 @@ function TabView({ tabs }) {
           </li>
         ))}
         <motion.div
-          className="h-full bg-foreground rounded-xl absolute bottom-0 opacity-20"
+          className="h-full bg-foreground rounded-full absolute bottom-0 opacity-20"
           style={{
             width: `${tabWidth}%`,
             left: `${indicatorX}%`,

@@ -15,7 +15,7 @@ function About() {
   console.log(skillData);
 
   return (
-    <div
+    <section
       id="about"
       className={
         "w-full h-screen text-foreground flex flex-col justify-center items-center"
@@ -77,7 +77,7 @@ function About() {
           <Icon icon={"mdi:arrow-down-drop"} className={"text-6xl"} />
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

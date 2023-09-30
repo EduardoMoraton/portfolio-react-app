@@ -1,19 +1,28 @@
-
+// App.js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import About from "./components/About";
 import Experience from "./components/Experience";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import { Analytics } from '@vercel/analytics/react';
+import Blog from "./components/Blog";
+import FullPage from "./components/FullPage";
+import FullBlog from "./components/FullBlog";
 
 function App() {
   return (
-    <div className={'scroll-smooth'}>
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Analytics />
-      <Experience/>
-    </div>
+    <Router>
+      <div className={"scroll-smooth"}>
+       
+        <Routes>
+          <Route path="/" element={<FullPage/>}/>
+          <Route path="/blog/*" element={<FullBlog/>}/>
+        </Routes>
+        
+
+
+      </div>
+    </Router>
   );
 }
 

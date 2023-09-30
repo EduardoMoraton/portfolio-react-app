@@ -27,7 +27,7 @@ function Home() {
 
   return (
     <div
-      name="home"
+      id="home"
       className={"w-full h-screen flex items-center justify-center"}
       style={svgBg}
     >

@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 function Certifications({ label }) {
   return (
-    <div className={"flex flex-col py-10 w-full"}>
+    <div className={"flex flex-col py-10 w-full h-full overflow-y-scroll"}>
       {certs.map((cert, index) => (
         <Reveal delay={index/35}>
           <div className={"flex bg-currentLine rounded-lg p-3 group transition my-2"} key={index}>

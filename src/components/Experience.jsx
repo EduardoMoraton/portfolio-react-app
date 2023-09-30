@@ -20,7 +20,7 @@ function Experience() {
 
   return (
     <div
-      id="Work"
+      id="experience"
       className={
         "w-full h-screen text-foreground flex justify-center items-center"
       }

@@ -114,12 +114,7 @@ export const skillData = [
 ];
 
 
-export const resume = null;
-
-
-export const filteredProjects = ["FilmSpot", "JoinToBuyBusinessApp", "CarSim-V1"];
-
-
+export const resume_link = null;
 
 
 export const formspreeUrl = "https://formspree.io/f/xaygqpjl";
@@ -245,7 +240,87 @@ export const certs = [
     expedition: "Jan 2023",
     cert_link:"https://openwebinars.net/cert/smAK"
   },
+  {
+    id:3,
+    name:"AWS Learning: Architecting",
+    from:"Amazon Web Services (AWS)",
+    icon:"https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1703721600&v=beta&t=L22u-n2Ap_gOWbkYKjBtQYIbVprbzSvNPxlKu8eHlJw",
+    cert_code:"28ac3b97-42ef-4523-91ad-cb717b7a5727",
+    expedition: "Mar 2023",
+    cert_link:"https://www.credly.com/badges/28ac3b97-42ef-4523-91ad-cb717b7a5727/linked_in_profile"
+  },
+  {
+    id:3,
+    name:"AWS Cloud Quest: Cloud Practitioner",
+    from:"Amazon Web Services (AWS)",
+    icon:"https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1703721600&v=beta&t=L22u-n2Ap_gOWbkYKjBtQYIbVprbzSvNPxlKu8eHlJw",
+    cert_code:"3578b9a4-8f65-480f-b013-492d6a0cd704",
+    expedition: "Mar 2023",
+    cert_link:"https://www.credly.com/badges/3578b9a4-8f65-480f-b013-492d6a0cd704/linked_in_profile"
+  },
+  {
+    id:3,
+    name:"AWS Learning: Architecting",
+    from:"Amazon Web Services (AWS)",
+    icon:"https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1703721600&v=beta&t=L22u-n2Ap_gOWbkYKjBtQYIbVprbzSvNPxlKu8eHlJw",
+    cert_code:"28ac3b97-42ef-4523-91ad-cb717b7a5727",
+    expedition: "Mar 2023",
+    cert_link:"https://www.credly.com/badges/28ac3b97-42ef-4523-91ad-cb717b7a5727/linked_in_profile"
+  },
+  {
+    id:3,
+    name:"AWS Partner: Accreditation (Technical)",
+    from:"Amazon Web Services (AWS)",
+    icon:"https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1703721600&v=beta&t=L22u-n2Ap_gOWbkYKjBtQYIbVprbzSvNPxlKu8eHlJw",
+    cert_code:"0da65a2a-391a-4bdc-9531-d3b14d4e5529",
+    expedition: "Mar 2023",
+    cert_link:"https://www.credly.com/badges/0da65a2a-391a-4bdc-9531-d3b14d4e5529/linked_in_profile"
+  },
+  {
+    id:3,
+    name:"AWS Partner: Sales Accreditation (Business)",
+    from:"Amazon Web Services (AWS)",
+    icon:"https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1703721600&v=beta&t=L22u-n2Ap_gOWbkYKjBtQYIbVprbzSvNPxlKu8eHlJw",
+    cert_code:"446f6c3d-8cb9-466a-8ee1-d60d184b5c57",
+    expedition: "Mar 2023",
+    cert_link:"https://www.credly.com/badges/446f6c3d-8cb9-466a-8ee1-d60d184b5c57/linked_in_profile"
+  },
 ]
+
+export const code_art_demo = [
+  {
+    name: "Maze generator",
+    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/hMz9KuEbD" className={'w-full h-full'}></iframe>
+  },
+  {
+    name: "Wave function collapse",
+    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/uNkuz-Qgl" className={'w-full h-full'}></iframe>
+  },
+  {
+    name: "Game of life",
+    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/ITQSFtwGz" className={'w-full h-full'}></iframe>
+  },
+  {
+    name: "Physics painting simulation",
+    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/W7mu_NOAA" className={'w-full h-full'}></iframe>
+  }
+]
+
+
+export const blog = [
+  {
+    name: "How I did this blog",
+    name_es: "Como hice este blog",
+    link: "howididthisblog"
+  },
+  {
+    name: "How I did this blog",
+    name_es: "Como hice este blog",
+    link: "howididthisblog"
+  }
+]
+  
+
 
 // Dracula colors
 

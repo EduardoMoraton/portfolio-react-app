@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Logo from "../assets/logo-pink.png";
 import { colors } from "../data.js";
 import Reveal from "./Reveal/Reveal";
+import { scrollTo } from "../utils/scrollUtils";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -20,18 +21,18 @@ const Navbar = () => {
       </div>
 
       {/* Menu */}
-      <ul className="hidden md:flex gap-2">
+      <ul className="hidden md:flex gap-2 cursor-pointer">
         <Reveal y={10} delay={0.1}>
-        <a href="#home" smooth={true} duration={500}>Home</a>
+        <a onClick={()=>{scrollTo("home")}} >Home</a>
         </Reveal>
         <Reveal y={10} delay={0.15}>
-        <a href="#about" smooth={true} duration={500}>About</a>
+        <a onClick={()=>{scrollTo("about")}}>About</a>
         </Reveal>
         <Reveal y={10} delay={0.2}>
-        <a href="#experience" smooth={true} duration={500}>Experience</a>
+        <a onClick={()=>{scrollTo("experience")}}>Experience</a>
         </Reveal>
         <Reveal y={10} delay={0.25}>
-        <a href="#blog" smooth={true} duration={500}>Blog</a>
+        <a onClick={()=>{scrollTo("blog")}}>Blog</a>
         </Reveal>
         <Reveal y={10} delay={0.30}>
         <a href="#contact" smooth={true} duration={500}>Contact</a>

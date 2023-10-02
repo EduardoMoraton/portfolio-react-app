@@ -8,19 +8,13 @@ import smurfcatImage from "../assets/easter-egg/smurfcat.jpeg";
 import smurfcatSound from "../assets/easter-egg/smurfcat.mp3";
 import Reveal from "./Reveal/Reveal";
 import { social_media } from "../data";
+import { scrollTo } from "../utils/scrollUtils";
 
 function Home() {
   const svgBg = {
     backgroundImage: `url(${SvgBackGround})`,
     backgroundSize: "cover",
     backgroundPosition: "bottom",
-  };
-
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   const images = require.context("../assets/parallax", true);
@@ -96,12 +90,12 @@ function Home() {
               <div className={"flex py-2 justify-center"} data-atropos-offset="6">
                 <Reveal delay={0.5}>
                 <button
-              onClick={scrollToAbout}
+              onClick={()=>scrollTo("contact")}
               className={
                 "text-foreground group flex items-center border-2 px-6 py-1 hover:bg-pink hover:border-pink trasition .3"
               }
             >
-              See more{" "}
+              Contact{" "}
               <Icon
                 className={"text-2xl group-hover:rotate-90 transition .3"}
                 icon={"ph:arrow-right"}

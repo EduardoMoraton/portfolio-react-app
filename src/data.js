@@ -233,7 +233,7 @@ export const certs = [
   },
   {
     id:3,
-    name:"Curso de Scrum avanzado",
+    name:"Curso de Scrum técnico",
     from:"OpenWebinars",
     icon:"https://media.licdn.com/dms/image/D4D0BAQFI49yiiSnKeQ/company-logo_100_100/0/1688551095556?e=1703721600&v=beta&t=XOWAEeKMnNF0UnvqrQHFklmuxPrnLPgrm7HRr8O6jbI",
     cert_code:"smAK",
@@ -310,14 +310,28 @@ export const code_art_demo = [
 export const blog = [
   {
     name: "How I did this blog",
-    name_es: "Como hice este blog",
-    link: "howididthisblog"
+    link: "howididthisblog",
+    img: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
+    demo: "Welcome to my blog where I will be uploading all the little proejcts I am working on",
+    time: "5 min",
+    dateAdded: "2023-09-10",
   },
   {
     name: "How I did this blog",
-    name_es: "Como hice este blog",
-    link: "howididthisblog"
-  }
+    link: "howididthisblog",
+    img: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
+    demo: "Welcome to my blog where I will be uploading all the little proejcts I am working on",
+    time: "5 min",
+    dateAdded: "2023-09-10",
+  },
+  {
+    name: "How I did this blog",
+    link: "howididthisblog",
+    img: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
+    demo: "Welcome to my blog where I will be uploading all the little proejcts I am working on",
+    time: "5 min",
+    dateAdded: "2023-09-10",
+  },
 ]
   
 

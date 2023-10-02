@@ -4,6 +4,8 @@ import Home from './Home'
 import About from './About'
 import Experience from './Experience'
 import Blog from './Blog'
+import Contact from './Contact'
+import Footer from './Footer'
 
 export default class FullPage extends Component {
   render() {
@@ -14,6 +16,8 @@ export default class FullPage extends Component {
         <About/>
         <Experience/>
         <Blog/>
+        <Contact/>
+        <Footer/>
       </div>
     )
   }

@@ -13,8 +13,11 @@ export class FullBlog extends Component {
   render() {
     const postname = this.state.currentUrl.split("/")[4]
     return (
-      <div className={'flex '}>
-        {postname==null?<>A</>:<Post postpath={postname}></Post>}
+      <div className={'flex align-center justify-center w-full'}>
+        <div className={'w-[600px]'}>
+          {postname==null?<>A</>:<Post postpath={postname}></Post>}
+        </div>
+        
       </div>
     );
   }

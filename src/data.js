@@ -317,20 +317,12 @@ export const blog = [
     dateAdded: "2023-09-10",
   },
   {
-    name: "How I did this blog",
-    link: "howididthisblog",
-    img: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-    demo: "Welcome to my blog where I will be uploading all the little proejcts I am working on",
-    time: "5 min",
-    dateAdded: "2023-09-10",
-  },
-  {
-    name: "How I did this blog",
-    link: "howididthisblog",
-    img: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-    demo: "Welcome to my blog where I will be uploading all the little proejcts I am working on",
-    time: "5 min",
-    dateAdded: "2023-09-10",
+    name: "Join To Buy my final grade project",
+    link: "jointobuy",
+    img: null,
+    demo: "Short explaniation about my final grade project",
+    time: "2 min",
+    dateAdded: "2023-09-20",
   },
 ]
   

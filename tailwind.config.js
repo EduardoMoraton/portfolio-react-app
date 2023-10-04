@@ -18,6 +18,16 @@ module.exports = {
         red: "#ff5555",
         yellow: "#f1fa8c",
       },
+      keyframes: {
+        colormorph: {
+          '0%, 100%': { 'background-color': '#bd93f9' },
+          '50%': { 'background-color': '#ff79c6' },
+        },
+
+        animation: {
+          colormorph: 'colormorph 2s ease-in-out infinite',
+        }
+      }
     },
   },
   plugins: [],

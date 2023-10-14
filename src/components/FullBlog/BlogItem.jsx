@@ -4,10 +4,11 @@ import React from 'react'
 function BlogItem({data}) {
   console.log(document.location)
   const posturl = document.location.origin+"/blog/"+data.link
+  const go = () => {window.location.href = posturl;}
   return (
     
 
-    <div className={'bg-currentLine group hover:bg-comment hover:cursor-pointer transition border-purple border-2 w-full p-4 flex my-2 rounded-xl'}>
+    <div className={'bg-currentLine group hover:bg-comment hover:cursor-pointer transition border-purple border-2 w-full p-4 flex my-2 rounded-xl'} onClick={go}>
        
         <img src={data.img==null?document.location.origin+"/blog/"+data.link+"/image.gif":data.img} className={'w-[150px] h-[150px] rounded-xl mr-3'}></img>
         <div className={'w-full'}>

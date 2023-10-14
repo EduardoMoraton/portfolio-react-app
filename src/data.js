@@ -10,6 +10,29 @@ export const githubUsername = "EduardoMoraton";
 
 export const Blog = <Icon icon="mdi:linkedin" />;
 
+export const programmingMessages = [
+  "Coding: Where magic meets logic.",
+  "Ctrl + Alt + Delight: The Developer's Trilogy.",
+  "From Bugs to Features: A Coder's Journey.",
+  "Creating Tomorrow's World, One Line of Code at a Time.",
+  "Coding: Turning Coffee into Code since forever.",
+  "Syntax Errors, Coffee, Repeat.",
+  "Software: Where bugs are just unexpected features.",
+  "Ctrl + S: Saving the World, one code at a time.",
+  "Code is Poetry: Craft it with Love.",
+  "Coding: The art of thinking like a computer.",
+  "Programmers make the world go 'round.",
+  "Coding: The ultimate puzzle-solving adventure.",
+  "While (you > me) { keepCoding(); }",
+  "10 PRINT 'Hello, World!'; 20 GOTO 10",
+  "Software Developer: The unsung hero of the digital age.",
+  "Code like no one's debugging.",
+  "The Matrix has you... coding JavaScript.",
+  "Code Hard, Debug Harder.",
+  "Keep Calm and Call Tech Support.",
+  "Stack Overflow: Where programmers unite."
+];
+
 export const skillData = [
   {
     id: 1,
@@ -152,7 +175,7 @@ export const projects = [
     demo:"https://film-spot.vercel.app/",
     status:'Early work in process',
     github:'https://github.com/EduardoMoraton/FilmSpot',
-    skills: [3,16]
+    skills: [12]
   },
   {
     id: 3,
@@ -162,7 +185,7 @@ export const projects = [
     demo:null,
     status:'Early work in process',
     github:'https://github.com/EduardoMoraton/AutoTube',
-    skills: [3,16]
+    skills: [3,16,6]
   },
   {
     id: 1,

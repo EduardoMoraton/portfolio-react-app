@@ -10,11 +10,6 @@ export const githubUsername = "EduardoMoraton";
 
 export const Blog = <Icon icon="mdi:linkedin" />;
 
-
-export const moreInfo =
-  "Apasionado de la tecnología, siempre buscando nuevas tecnologías para crear pequeños proyectos innovadores. Amante de la creatividad y la experimentación.";
-
-
 export const skillData = [
   {
     id: 1,
@@ -260,15 +255,6 @@ export const certs = [
   },
   {
     id:3,
-    name:"AWS Learning: Architecting",
-    from:"Amazon Web Services (AWS)",
-    icon:"https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1703721600&v=beta&t=L22u-n2Ap_gOWbkYKjBtQYIbVprbzSvNPxlKu8eHlJw",
-    cert_code:"28ac3b97-42ef-4523-91ad-cb717b7a5727",
-    expedition: "Mar 2023",
-    cert_link:"https://www.credly.com/badges/28ac3b97-42ef-4523-91ad-cb717b7a5727/linked_in_profile"
-  },
-  {
-    id:3,
     name:"AWS Partner: Accreditation (Technical)",
     from:"Amazon Web Services (AWS)",
     icon:"https://media.licdn.com/dms/image/C560BAQER_QnUTXrPJw/company-logo_100_100/0/1670264050886?e=1703721600&v=beta&t=L22u-n2Ap_gOWbkYKjBtQYIbVprbzSvNPxlKu8eHlJw",
@@ -290,19 +276,19 @@ export const certs = [
 export const code_art_demo = [
   {
     name: "Maze generator",
-    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/hMz9KuEbD" className={'w-full h-full'}></iframe>
+    iframe: <iframe title="Maze generator" src="https://editor.p5js.org/EduardoMoraton/full/hMz9KuEbD" className={'w-full h-full'}></iframe>
   },
   {
     name: "Wave function collapse",
-    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/uNkuz-Qgl" className={'w-full h-full'}></iframe>
+    iframe: <iframe title="Wave function collapse" src="https://editor.p5js.org/EduardoMoraton/full/uNkuz-Qgl" className={'w-full h-full'}></iframe>
   },
   {
     name: "Game of life",
-    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/ITQSFtwGz" className={'w-full h-full'}></iframe>
+    iframe: <iframe title="Game of life" src="https://editor.p5js.org/EduardoMoraton/full/ITQSFtwGz" className={'w-full h-full'}></iframe>
   },
   {
     name: "Physics painting simulation",
-    iframe: <iframe src="https://editor.p5js.org/EduardoMoraton/full/W7mu_NOAA" className={'w-full h-full'}></iframe>
+    iframe: <iframe title="Physics painting simulation" src="https://editor.p5js.org/EduardoMoraton/full/W7mu_NOAA" className={'w-full h-full'}></iframe>
   }
 ]
 

@@ -9,7 +9,7 @@ function Post({ postpath, language }) {
   const [markdownContent, setMarkdownContent] = useState('');
 
   const [fileExists, setFileExists] = useState(true); 
-
+  
   useEffect(() => {
     // Fetch the content
     fetch(`${process.env.PUBLIC_URL}/blog/${postpath}/post_${language}.md`)

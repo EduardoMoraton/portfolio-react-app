@@ -44,10 +44,7 @@ function About() {
               </Reveal>
               <Reveal delay={0.4}>
                 <p className={"text-foreground px-auto"}>
-                  Soy programador Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Quod accusamus porro illo! Ipsa rerum quam vel
-                  quod nostrum. Quas, dicta hic culpa voluptatibus obcaecati fugit
-                  iusto repudiandae excepturi dolore. Cupiditate!
+                I am a recently graduated developer with excellent grades in DAM (Development of Multiplatform Applications). I love working on new projects with the latest technologies, and I always strive for perfection in everything I do.
                 </p>
               </Reveal>
             </div>

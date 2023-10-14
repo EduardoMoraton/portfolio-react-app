@@ -9,7 +9,7 @@ function CodeArtDemos({label}) {
       <div className={'flex flex-col h-full'}>
         {code_art_demo.map((demo,index)=>(
           <Reveal delay={index/20}>
-              <div key={index} className={selected==index? "bg-currentLine w-[200px] cursor-pointer":" bg-bg w-[200px] cursor-pointer"} onClick={()=>setSelected(index)}>
+              <div key={index} className={selected===index? "bg-currentLine w-[200px] cursor-pointer":" bg-bg w-[200px] cursor-pointer"} onClick={()=>setSelected(index)}>
             {demo.name}
           </div>
           </Reveal>

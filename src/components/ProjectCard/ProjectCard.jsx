@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { skillData } from "../../data";
 import Chip from "../Chip/Chip";
 import { Icon } from "@iconify/react";

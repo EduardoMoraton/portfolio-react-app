@@ -5,6 +5,7 @@ import { Button } from "react-scroll";
 import BlogItem from "./FullBlog/BlogItem";
 import Reveal from "./Reveal/Reveal";
 
+
 function Blog() {
   const svgBg = {
     backgroundImage: `url(${SvgBackGround})`,
@@ -24,7 +25,7 @@ function Blog() {
       <div className={"w-[800px]"}>
         <div>
           <h2 className={'text-4xl text-green'}>Blog</h2>
-          <h3 className={'text-2xl text-orange'}>Most recent posts:</h3>
+          <h3 className={'text-2xl text-cyan'}>Most recent posts:</h3>
         </div>
         <div className={' bg-currentLineBackDrop backdrop-blur-sm p-5 rounded-lg flex flex-col h-[600px]'}>
           {mostRecentPosts.map((post, index) => (

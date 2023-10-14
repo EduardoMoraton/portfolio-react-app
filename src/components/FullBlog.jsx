@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Post from './FullBlog/Post';
 import Footer from './Footer';
+import PostList from './FullBlog/PostList';
 
 export class FullBlog extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ export class FullBlog extends Component {
       <div >
          <div className={'flex align-center justify-center w-full mb-[200px]'}>
         <div className={'w-[800px]'}>
-          {postname==null?<>A</>:<Post postpath={postname} language={"en"}></Post>}
+          {postname===""?<PostList/>:<Post postpath={postname} language={"en"}></Post>}
         </div>
       </div>
       <Footer></Footer>

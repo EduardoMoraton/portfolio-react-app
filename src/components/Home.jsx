@@ -54,7 +54,7 @@ function Home() {
             }
           >
             <div>
-              <Reveal>
+              <Reveal delay={.7}>
                 <div className={'flex justify-center'}>
                   <h1 className={"text-green text-7xl absolute"} data-atropos-offset="5">
                     Eduardo Moratón

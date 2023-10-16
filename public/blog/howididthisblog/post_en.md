@@ -47,4 +47,35 @@ const arrayOfContent = [
 
 ## How I did this blog
 
-Well as you can notice this entire blog is made with React, im using the tailwind library for styles and the cool animation of the home page is made using [AtroposJS](https://atroposjs.com/)
+Well as you can notice this entire blog is made with React, im using the [Tailwind](https://tailwindcss.com/) library for styles and the cool animation of the home page is made using [AtroposJS](https://atroposjs.com/)
+
+### The blog
+
+The blog is done by stroring the blog posts as markdown files in a public folder, then a *Post* react component will do a request for getting the raw text data of that file by searching by the contetn in the url, then the last step its rendering
+
+```js
+useEffect(() => {
+    // Fetch the content
+    fetch(`${process.env.PUBLIC_URL}/blog/${postpath}/post_${language}.md`)
+      .then((response) => {
+        if (!response.ok) {
+          setFileExists(false); 
+          return '';
+        }
+        return response.text();
+      })
+      .then((data) => {
+        
+        if (containsMarkdownIndicators(data)) {
+          setMarkdownContent(data);
+        } else {
+          setFileExists(false); 
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching Markdown content:', error);
+        setFileExists(false); 
+      });
+  }, [postpath]);
+```
+> The part of the component used to retrive the data from the markdown file

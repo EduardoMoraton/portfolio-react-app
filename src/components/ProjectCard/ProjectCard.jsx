@@ -31,7 +31,7 @@ function ProjectCard({ project }) {
 
         <div className={"p-5 w-full flex flex-col justify-between"}>
           <div className={"mb-auto"}>{project.desc}</div>
-          <div className={"flex my-2"}>
+          <div className={"flex my-2 flex-wrap"}>
             {project.skills.map((id, index) => (
               <Chip skill={skillData[id-1]} />
             ))}

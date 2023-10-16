@@ -18,7 +18,7 @@ export class FullBlog extends Component {
     return (
       <div>
           <BlogHeader/>
-         <div className={'flex align-center justify-center h-screen w-screen mb-[200px] p-32'}>
+         <div className={'flex align-center justify-center min-h-screen w-screen mb-[200px] p-32'}>
           <div className={'w-[800px]'}>
             {postname===""?<PostList/>:<Post postpath={postname} language={"en"}></Post>}
           </div>

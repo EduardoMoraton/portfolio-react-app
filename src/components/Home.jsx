@@ -28,7 +28,7 @@ function Home() {
       <Konami action={() => new Audio(smurfcatSound).play()}>
         {<img src={smurfcatImage}></img>}
       </Konami>
-      <div className={""}>
+      <div className={"md:w-[800px] sm:w-[150px] sm:p-6"}>
         <Atropos
           className={"atropos-header"}
           activeOffset={20}
@@ -55,17 +55,17 @@ function Home() {
           >
             <div>
               <Reveal delay={.7}>
-                <div className={'flex justify-center'}>
-                  <h1 className={"text-green text-7xl absolute"} data-atropos-offset="5">
+                <div className={'flex justify-center lg:text-7xl :text-6xl'}>
+                  <h1 className={"text-green absolute"} data-atropos-offset="5">
                     Eduardo Moratón
                   </h1>
-                  <h1 className={"text-cyan text-7xl absolute"} data-atropos-offset="5.4">
+                  <h1 className={"text-cyan absolute"} data-atropos-offset="5.4">
                     Eduardo Moratón
                   </h1>
-                  <h1 className={"text-purple text-7xl absolute"} data-atropos-offset="5.8">
+                  <h1 className={"text-purple absolute"} data-atropos-offset="5.8">
                     Eduardo Moratón
                   </h1>
-                  <h1 className={"text-pink text-7xl relative"} data-atropos-offset="6.2">
+                  <h1 className={"text-pink relative"} data-atropos-offset="6.2">
                     Eduardo Moratón
                   </h1>
                 </div>

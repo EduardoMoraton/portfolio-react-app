@@ -34,7 +34,7 @@ function TabView({ tabs }) {
           }}
         ></motion.div>
       </ul>
-      <div className={'w-[800px] h-[600px]'}>{tabs[selectedTab].tab}</div>
+      <div className={'lg:w-[800px] h-[600px] sm:m-10'}>{tabs[selectedTab].tab}</div>
     </>
   );
 }

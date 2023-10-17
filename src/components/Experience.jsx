@@ -16,7 +16,7 @@ function Experience() {
     backgroundPosition: "top",
   };
   
-  const tabs = [{name: 'Work', tab:<WorkExperience/>},{name: 'Projects', tab:<Projects/>}, {name: 'Certifications', tab:<Certifications/>}, {name: 'Code art demo', tab:<CodeArtDemos/>}]
+  const tabs = [{name: 'Work', tab:<WorkExperience/>},{name: 'Projects', tab:<Projects/>}, {name: 'Certifications', tab:<Certifications/>}, {name: 'Demo', tab:<CodeArtDemos/>}]
 
   return (
     <div

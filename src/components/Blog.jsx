@@ -22,7 +22,7 @@ function Blog() {
       className="w-full h-screen text-foreground flex flex-col justify-center items-center"
       style={svgBg}
     >
-      <div className={"w-[800px]"}>
+      <div className={"lg:w-[800px] md:w-[500px] sm:w-[300px]"}>
         <div>
           <h2 className={'text-4xl text-green'}>Blog</h2>
           <h3 className={'text-2xl text-cyan'}>Most recent posts:</h3>
